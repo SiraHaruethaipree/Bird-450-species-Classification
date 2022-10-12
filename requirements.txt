@@ -1,6 +1,6 @@
-numpy==1.19.2
+numpy==1.2
 pandas==1.2.5
 Pillow==9.2.0
 streamlit==1.8.1
-tensorflow==2.6.0
+tensorflow==2.8.0
 protobuf==3.19.0
