@@ -6,7 +6,7 @@ import numpy as np
 
 
 model = tf.keras.models.load_model("bird_mobile_finetune.h5")
-BirdClasses = np.loadtxt("Brirdclass.txt", dtype="<U29", delimiter = '\n')
+BirdClasses = np.loadtxt("BirdClass.txt", dtype="<U29", delimiter = '\n')
 
 
 st.title('Bird 450 species Classification')
