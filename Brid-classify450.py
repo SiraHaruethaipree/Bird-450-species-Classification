@@ -12,7 +12,7 @@ BirdClasses = np.loadtxt("Brirdclass.txt", dtype="<U29", delimiter = '\n')
 st.title('Bird 450 species Classification')
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
-file = st.file_uploader("Upload the image to be classified", type=["png", "jpg", "jpeg"])
+file = st.file_uploader("Upload Bird image to be classified", type=["png", "jpg", "jpeg"])
 
 if file is not None:
   u_img = Image.open(file)
