@@ -19,9 +19,6 @@ if file is not None:
   show_image = u_img.resize((600, 400))
   show  = st.image(show_image, 'Uploaded Image', use_column_width=True)
   # We preprocess the image to fit in algorithm.
-  #image = np.asarray(u_img) / 255
-  #my_image = tf.image.resize(u_img, size = [224, 224])
-  #my_image = my_image / 255.
   my_image = u_img.resize((224, 224))
   my_image = np.asarray(my_image) / 255.
   pred = model.predict(tf.expand_dims(my_image, axis=0))
